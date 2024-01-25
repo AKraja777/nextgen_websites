@@ -9,13 +9,9 @@
 #home {
 height: 120vh; /* Set the height to 100% of the viewport height */
 
-
-background: linear-gradient(
-    to right,
-    #48bed9,
-    #0a5bb3
-   
-);
+background-image: url('img/img7.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+background-size: 100% 100%;
+color: white; /* Set text color to white or any color that contrasts with the background */
 }
 #images {
     height: 450px;
@@ -38,7 +34,7 @@ position: absolute;
     left: 90%; /* Adjusted for better centering */
 }
 #about {
-    background-image: url('img/img2.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img9.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white; /* Set text color to white or any color that contrasts with the background */
 }
@@ -74,8 +70,9 @@ margin-bottom: 50px; /* Add margin to create space */
     padding: 10px;
 }
 #service{
-
-background: linear-gradient(#06002e,#06002e 100%);
+    background-image: url('img/img10.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-size: 100% 100%;
+    color: white; /* Set text color to white or any color that contrasts with the background */
 }
 
 .home-box1 {
@@ -152,13 +149,9 @@ color: black;
 }
 
 #done {
-    background: linear-gradient(
-        to right,
-        #ddf3f5,
-        #41e2f6,
-        #0084f3,
-        #bdabf1
-    );
+    background-image: url('img/img12.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-size: 100% 100%;
+    color: white; /* Set text color to white or any color that contrasts with the background */
     position: relative; /* Set position to allow z-index to take effect */
     z-index: 1; /* Set a higher z-index for the background */
   
@@ -248,7 +241,9 @@ color: black;
 
 #course {
     height: 100vh;
-    background: linear-gradient(#06002e, #06002e 100%);
+    background-image: url('img/img13.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-size: 100% 100%;
+    color: white;
     
 }
 
@@ -273,13 +268,9 @@ color: black;
 }
 
 #details {
-    background: linear-gradient(
-        to right,
-        #ddf3f5,
-        #41e2f6,
-        #0084f3,
-        #bdabf1
-    );
+    background-image: url('img/img14.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-size: 100% 100%;
+    color: white;
     position: relative; /* Set position to allow z-index to take effect */
     z-index: 1; /* Set a higher z-index for the background */
   
@@ -348,11 +339,9 @@ color: black;
 }
 
 #job {
-    background: linear-gradient(
-        to right,
-        #0f4cb1,
-        #b868e0
-    );
+    background-image: url('img/img17.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-size: 100% 100%;
+    color: white;
     position: relative; /* Set position to allow z-index to take effect */
     z-index: 1; /* Set a higher z-index for the background */
   
@@ -374,10 +363,9 @@ color: black;
 }
 
 #ready{
-    background: linear-gradient(#06002e, #06002e 100%);
-    position: relative; /* Set position to allow z-index to take effect */
-    z-index: 1; /* Set a higher z-index for the background */
-  
+    background-image: url('img/img9.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-size: 100% 100%;
+    color: white; /* Set text color to white or any color that contrasts with the background */
     height:55rem;
 }
 
@@ -515,7 +503,7 @@ color: black;
         text-align: left; /* Align text to the left on smaller screens */
         padding: 0 15px; /* Add some padding for better readability on smaller screens */
         text-align: center; /* Center the text by default */
-        top: 75%;
+        top: 70%;
     left: 40%; /* Adjusted for better centering */
     margin:50px;
     }
