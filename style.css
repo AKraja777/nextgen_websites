@@ -1,9 +1,47 @@
+#contact {
+    background-image: url('img/img11.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-size: 100% 100%;
+    color: white; /* Set text color to white or any color that contrasts with the background */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+#contact img{
+    height:80%;
+ }
+ .box{
+    width: 80% !important;
+    margin-top: 10px;
 
-#icon {
+ }
+ form{
+    display: flex;
+    flex-direction: column;
+ }
+ #contact input{
+    margin: 10px 0px;
+ }
+ #contact textarea {
+    margin: 10px 0px;
+ }
+ .signin{
+    background: aqua !important;
+    color: black !important;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, .3);
+}
+#contact{
     width: 100%;
-    max-width: 120px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home #icon {
+    width: 100%;
+    max-width: 80px;
     height: auto;
-    margin-top:15px;
+
+    position: absolute;
+    top: 4%;
+    
 }
 
 #home {
@@ -13,28 +51,32 @@ background-image: url('img/img7.jpg'); /* Replace 'img/img2.jpg' with the actual
 background-size: 100% 100%;
 color: white; /* Set text color to white or any color that contrasts with the background */
 }
-#images {
-    height: 450px;
+#home img{
+    position: absolute;
+    top: 25%;
+    left: 6%; 
+    width: 100%;
+    max-width: 450px;
+    height: 500px;
 }
-
 
 #home h1 {
     color: rgb(247, 241, 241);
-    text-align: center; /* Center the text by default */
+  
     position: absolute;
-    top: 20%;
-    left: 65%; /* Adjusted for better centering */
-    margin:50px;
+    top:9rem;
+    left: 32%; 
+ 
     font-size:300%;
     transform: translateX(-50%);
 }
 #home p{
 position: absolute;
-    bottom:10px;
+    top:36rem;
     left: 90%; /* Adjusted for better centering */
 }
 #about {
-    background-image: url('img/img9.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img2.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white; /* Set text color to white or any color that contrasts with the background */
 }
@@ -70,7 +112,7 @@ margin-bottom: 50px; /* Add margin to create space */
     padding: 10px;
 }
 #service{
-    background-image: url('img/img10.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img13.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white; /* Set text color to white or any color that contrasts with the background */
 }
@@ -149,7 +191,7 @@ color: black;
 }
 
 #done {
-    background-image: url('img/img12.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img6.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white; /* Set text color to white or any color that contrasts with the background */
     position: relative; /* Set position to allow z-index to take effect */
@@ -241,7 +283,7 @@ color: black;
 
 #course {
     height: 100vh;
-    background-image: url('img/img13.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img8.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white;
     
@@ -268,7 +310,7 @@ color: black;
 }
 
 #details {
-    background-image: url('img/img14.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img6.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white;
     position: relative; /* Set position to allow z-index to take effect */
@@ -335,11 +377,11 @@ color: black;
     font-weight: bold;
     font-size:30px;
     text-align: center;
-    color: black;
+    color: rgb(240, 236, 236);
 }
 
 #job {
-    background-image: url('img/img17.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img9.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white;
     position: relative; /* Set position to allow z-index to take effect */
@@ -363,7 +405,7 @@ color: black;
 }
 
 #ready{
-    background-image: url('img/img9.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
+    background-image: url('img/img4.jpg'); /* Replace 'img/img2.jpg' with the actual path to your image file */
     background-size: 100% 100%;
     color: white; /* Set text color to white or any color that contrasts with the background */
     height:55rem;
@@ -380,19 +422,20 @@ color: black;
 }
 #ready p1 {
     margin-left:50px;
-    font-size: 20px;
+    font-size: 22px;
     color:#eaf7f6;
     position: relative;
-   
+    font-weight: bold;
     top:5rem;
 }
 #ready h6 {
-    font-size: 20px;
+    font-size: 23px;
     color:#eaf7f6;
     margin:30px;
     position: relative;
     right:-10%;
     top:30rem;
+    font-weight: bold;
 }
 .home-box12 {
     text-align: center;
@@ -498,19 +541,36 @@ color: black;
      
     
     #home h1 {
-        font-size: 28px; /* Decrease font size for smaller screens */
+        font-size: 20px; /* Decrease font size for smaller screens */
         top: 50%; /* Adjusted for better positioning on smaller screens */
         text-align: left; /* Align text to the left on smaller screens */
         padding: 0 15px; /* Add some padding for better readability on smaller screens */
         text-align: center; /* Center the text by default */
-        top: 70%;
+        top: 38rem;
     left: 40%; /* Adjusted for better centering */
     margin:50px;
     }
     #home p{
 position: absolute;
-    bottom:-120px;
+    top:50rem;
     left: 80%; /* Adjusted for better centering */
+}
+#home img{
+    position: absolute;
+    top: 18%;
+    left: 6%; 
+    width:300px;
+}
+#home #icon {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    margin-top:20px;
+    position: absolute;
+    top: 4%;
+  left:9rem;
+   
+    
 }
 #home-box h1 {
     font-size: 20px;
