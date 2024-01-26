@@ -214,7 +214,7 @@ if (isset($_POST['btnAdd'])) {
                               </svg>
                         </button>
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
-                        <img src="img/cone(3).png" data-aos="fade-up"  class="img-fluid">
+                        <img src="img/img7.png" data-aos="fade-up"  class="img-fluid">
                     </div>
                     <div class="embed-responsive embed-responsive-16by9" data-aos="fade-up">
                         <iframe class="embed-responsive-item" width="120%" height="315" src="https://www.youtube.com/embed/N0ao4OA_OQI" frameborder="0" allowfullscreen></iframe>
