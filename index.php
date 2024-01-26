@@ -6,6 +6,8 @@ $database = "u743445510_nextgen"; // replace with your database name
 
 
 
+
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -27,6 +29,9 @@ if (isset($_POST['btnAdd'])) {
     if ($conn->query($sql_query) === TRUE) {
         // Display JavaScript alert
         echo "<script>alert('New record created successfully');</script>";
+        // Redirect to another page after displaying the alert
+        echo "<script>window.location.href='index.php';</script>";
+        exit();
     } else {
         echo "Error: " . $sql_query . "<br>" . $conn->error;
     }
@@ -42,7 +47,7 @@ if (isset($_POST['btnAdd'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <title>NextGen</title>
@@ -56,7 +61,7 @@ if (isset($_POST['btnAdd'])) {
             <div class="row">
                 <div class="col-md-6">
                     <img src="img/icon.jpg" id="icon" data-aos="fade-up" class="img-fluid">
-                    <img src="img/img10.jpg" id="images" data-aos="fade-up" class="img-fluid mt-3">
+                    <img src="img/img1.png" id="images" data-aos="fade-up" class="img-fluid mt-3">
                 </div>
                 <div class="col-md-6" data-aos="fade-up">
                     <h1 class="mt-5" >ALL JOBS DON'T NEED EMPLOYEES AT WORKPLACES</h1>
@@ -67,16 +72,20 @@ if (isset($_POST['btnAdd'])) {
             </div>
         </div>
     </section>
-    <section id="about" class="bg-primary text-white" >
-        <div class="container">
-            <div class="row">
-                <div id="home-box" data-aos="fade-up">
-                    <h1 class="text-start">BECOME FINANCIALLY INDEPENDENT</h1>
-                    <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maiores enim soluta dolorum quam, sapiente voluptates vel, minima libero sint ducimus commodi cupiditate blanditiis molestias! Animi voluptate veritatis pariatur quisquam!Temporibus, maiores enim soluta dolorum quam</p>
-                </div>
+    <section id="about" class="bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-up">
+                <img src="img/img5.png" data-aos="fade-up" alt="">
+            </div>
+            <div class="col-md-6" id="home-box" data-aos="fade-up">
+                <h1 class="text-start">BECOME FINANCIALLY INDEPENDENT</h1>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maiores enim soluta dolorum quam, sapiente voluptates vel, minima libero sint ducimus commodi cupiditate blanditiis molestias! Animi voluptate veritatis pariatur quisquam! Temporibus, maiores enim soluta dolorum quam</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <section id="service" class="bg-primary text-white">
         <div class="container">
             <div class="row">
@@ -196,7 +205,8 @@ if (isset($_POST['btnAdd'])) {
             <div class="row d-flex flex-column align-items-center">
                 <div class="col-md-6 text-center">
                     <div class="d-flex flex-column align-items-end">
-                        <h1 class="my-5" data-aos="fade-up" style="color: #5396d3; font-size: 2.5em;">Want to take a trial of jobs before enrolling in the course??</h1>
+                    
+                        <h1 class="my-5" data-aos="fade-up" style="color:black; font-size: 2.5em;">Want to take a trial of jobs before enrolling in the course??</h1>
                         <button class="btn btn-secondary mt-3" data-aos="fade-up" id="button" style="font-size: 1.5em; border-radius: 10px;font-weight: bold; background: #38b6ff;color:blue;">
                             Click Here</i>
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -204,7 +214,7 @@ if (isset($_POST['btnAdd'])) {
                               </svg>
                         </button>
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
-                        
+                        <img src="img/cone(3).png" data-aos="fade-up"  class="img-fluid">
                     </div>
                     <div class="embed-responsive embed-responsive-16by9" data-aos="fade-up">
                         <iframe class="embed-responsive-item" width="120%" height="315" src="https://www.youtube.com/embed/N0ao4OA_OQI" frameborder="0" allowfullscreen></iframe>
@@ -215,11 +225,11 @@ if (isset($_POST['btnAdd'])) {
     </section>
     <section id="ready" class="bg-primary text-white">
         <div class="container-5">
-      
             <div class="row d-flex flex-column">
                 <div class="col-md-6">
                     <h1 class="my-5" data-aos="fade-up">Ready to work with us ??</h1>
                     <p1 data-aos="fade-up">Talk to us</p1>
+                    <img src="img/img4.png" data-aos="fade-up"  class="img-fluid">
                     <h6 data-aos="fade-up">contact us</h6>
                 </div>
                 <div class="home-box12" data-aos="fade-up">
@@ -244,19 +254,23 @@ if (isset($_POST['btnAdd'])) {
     <div class="container box">
         <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
-                  <img src="img/img12.jpg" class="img-fluid">
+                  <img src="img/img2.png" data-aos="fade-up"  class="img-fluid">
                 </div>
     <div class="col-lg-6 col-md-6 col-12">
-        <h1>APPLY NOW</h1>
+        <h1 style="color:black; font-size: 2.5em;">APPLY NOW</h1>
         <form method="post" href="index.php" enctype="multipart/form-data">
-    <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name">
-    <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email">
-    <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile">
-    <input type="text"  class="form-control" id="location" name="location" placeholder="enter your Location" name="location">
+    <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
+    <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
+    <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
+    <input type="text"  class="form-control" id="location" name="location" placeholder="enter your Location" name="location" required>
     <button type="submit" class="btn signin" name="btnAdd">Enroller Now</button>
 </form>
         </div>
    </div>
+    </section>
+    <section id="footer">
+        <h5>thank you </h5>
+        <img src="img/cone.png" data-aos="fade-up" class="img-fluid" alt="">
     </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
