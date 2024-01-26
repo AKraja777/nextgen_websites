@@ -270,7 +270,7 @@ if (isset($_POST['btnAdd'])) {
     </section>
     <section id="footer">
         <h5>thank you </h5>
-        <img src="img/cone.png" data-aos="fade-up" class="img-fluid" alt="">
+        <img src="img/img8.png" data-aos="fade-up" class="img-fluid" alt="">
     </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
