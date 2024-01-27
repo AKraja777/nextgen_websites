@@ -177,11 +177,11 @@ right:45%;
 }
 
 #home-box p {
-    font-size: 20px;
+    font-size:18px;
     color: black;
     display: inline-block; /* Display as inline block */
     margin: 0; /* Remove default margin */
-    padding: 10px;
+    padding: 3px;
 }
 #service{
     background: linear-gradient(
@@ -201,6 +201,7 @@ to right,
 #b1dcea,
 #96bdfd
 );
+height:21rem;
 border-radius: 20px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 margin-top: 100px;
@@ -217,7 +218,7 @@ to right,
 #7acda2,
 #ebdb64
 );
-
+height:21rem;
 border-radius: 20px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 margin-top: 100px;
@@ -232,7 +233,7 @@ to right,
 #c270a9,
 #ef8864
 );
-
+height:21rem;
 border-radius: 20px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 margin-top: 100px;
@@ -258,14 +259,42 @@ margin-top:20px;
 color: rgb(31, 28, 28);
 font-weight: bold;
 }
-.home-box1 h1,
-.home-box1 p {
+.home-box1 h1{
 color: black;
+position: absolute;
+top: 0rem;
+
 }
-.home-box2 h1,
-.home-box2 p {
-color: black;
-}
+.home-box2 h1{
+    color: black;
+    position: absolute;
+    top: 0rem;
+    
+    }
+    .home-box3 h1{
+        color: black;
+        position: absolute;
+        top: 0rem;
+        
+        }
+.home-box1 p{
+    color: black;
+    position: absolute;
+    top: 16rem;
+    
+    }
+    .home-box2 p{
+        color: black;
+        position: absolute;
+        top: 16rem;
+        
+        }
+        .home-box3 p{
+            color: black;
+            position: absolute;
+            top: 16rem;
+            
+            }
 
 #done {
     background: linear-gradient(
@@ -312,7 +341,7 @@ color: black;
         margin-bottom: 50px; /* Add margin to create space */
         position: relative;
         left: 210%;
-        top:-27rem;
+        top:-26rem;
         }
         .home-box4 .icon{
     text-align: center;
@@ -344,7 +373,7 @@ color: black;
             margin-bottom: 50px; /* Add margin to create space */
             position: relative;
             left: 320%;
-            bottom:46rem;
+            bottom:43rem;
 
             }
             
@@ -628,6 +657,11 @@ color: black;
 
 
 @media (max-width: 768px) {
+    #about #home-box p{
+        position: relative;
+        top: 0%;
+        font-size:15px;
+    }
     .col-md-3 {
         width: 80%;
         max-width: 300px;
@@ -679,6 +713,7 @@ color: black;
     #b1dcea,
     #96bdfd
     );
+    height:15rem;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -695,6 +730,7 @@ color: black;
     #7acda2,
     #ebdb64
     );
+    height:15rem;
     position: relative;
     top:-10rem;
     border-radius: 20px;
@@ -711,6 +747,7 @@ color: black;
     #c270a9,
     #ef8864
     );
+    height:15rem;
     position: relative;
     top:-17rem;
     border-radius: 20px;
@@ -718,7 +755,42 @@ color: black;
     margin-top: 100px;
     margin-bottom: 50px; /* Add margin to create space */
     }
-
+    .home-box1 h1{
+        color: black;
+        position: absolute;
+        top: 0rem;
+        
+        }
+        .home-box2 h1{
+            color: black;
+            position: absolute;
+            top: 0rem;
+            
+            }
+            .home-box3 h1{
+                color: black;
+                position: absolute;
+                top: 0rem;
+                
+                }
+        .home-box1 p{
+            color: black;
+            position: absolute;
+            top: 11rem;
+            
+            }
+            .home-box2 p{
+                color: black;
+                position: absolute;
+                top: 11rem;
+                
+                }
+                .home-box3 p{
+                    color: black;
+                    position: absolute;
+                    top: 11rem;
+                    
+                    }
     #footer img{
         width:150px;
         height:150px;
@@ -797,6 +869,7 @@ color: black;
         right:-2rem;
     
     }
+   
     body {
         overflow-x: hidden;
     }
