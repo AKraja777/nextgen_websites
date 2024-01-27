@@ -237,7 +237,7 @@ input[type="number"] {
             </div>
     </section>
 <section id="information" class="bg-primary text-white">
-  <div class="container-5">
+  <div class="container-4">
   <h5>More Information</h5>
     <div class="accordion">
       <div class="panel panel">

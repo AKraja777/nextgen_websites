@@ -1,58 +1,30 @@
 
-
-.panel {
-    border: 1px solid #171818;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width:500px; /* Adjust as needed */
-    position: relative;
-    top:120px;
-    left:30px;
-  }
-  
-  .panel-header {
-    position: relative;
-    background-color: #191010;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  .panel-content {
-    padding: 10px;
-    background-color: #191010;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .container-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   
 body {
     overflow-x: hidden;
 }
-#information h5{
+#footer h5{
    text-align: center;
    position: absolute;
-      left:45%; 
+      left: 40%; 
       margin-top:40px;
       font-weight: bold;
-      color: #06002e;
 }
-
-#information {
+#footer img{
+    width:200px;
+    height:200px;
+    position: absolute;
+ margin-top:180px;
+    left: 42%; 
+}
+#footer {
     background: linear-gradient(
         to right,
-        #b93af4,
-        #c089d9,
-        #dfb1f4
+        #ddf00e,
+        #dfed80,
+        #e1ed86
     ); /* Set text color to white or any color that contrasts with the background */
-    height:39rem; /* Set the height to 100% of the viewport height */
+    height:30rem; /* Set the height to 100% of the viewport height */
 }
 #contact {
     background: linear-gradient(
@@ -682,7 +654,60 @@ top: 0rem;
     right:-30rem;
 
 }
+.panel {
+    border: 1px solid #171818;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width:500px; /* Adjust as needed */
+    position: relative;
+    top:120px;
+    left:30px;
+  }
+  
+  .panel-header {
+    position: relative;
+    background-color: #191010;
+    padding: 10px;
+    cursor: pointer;
+  }
 
+  .panel-content {
+    padding: 10px;
+    background-color: #191010;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .container-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+body {
+    overflow-x: hidden;
+}
+#information h5{
+   text-align: center;
+   position: absolute;
+      left:45%; 
+      margin-top:40px;
+      font-weight: bold;
+      color: #06002e;
+}
+
+#information {
+    background: linear-gradient(
+        to right,
+        #b93af4,
+        #c089d9,
+        #dfb1f4
+    ); /* Set text color to white or any color that contrasts with the background */
+    height:39rem; /* Set the height to 100% of the viewport height */
+}
 
 
 @media (max-width: 768px) {
@@ -860,19 +885,19 @@ top: 0rem;
                     top: 11rem;
                     
                     }
-    #information img{
+    #footer img{
         width:150px;
         height:150px;
         position: absolute;
     
         left: 28%; 
     }
-    #information h5{
+    #footer h5{
         text-align: center;
         position: absolute;
-        margin-top:30px;
-           left: 14%; 
-           font-size:24px;
+        margin-top:10px;
+           left: 20%; 
+           font-size:50px;
            font-weight: bold;
      }
      #ready{
