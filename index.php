@@ -67,7 +67,9 @@ if (isset($_POST['btnAdd'])) {
                     <img src="img/img1.png" id="images" data-aos="fade-up" class="img-fluid mt-3">
                 </div>
                 <div class="col-md-6" data-aos="fade-up">
-                    <h1 class="mt-5" >ALL JOBS DON'T NEED EMPLOYEES AT WORKPLACES</h1>
+                    <h1 class="mt-5" >ALL JOBS DON'T</h1>
+                    <h2 class="mt-5" >NEED EMPLOYEES</h2>
+                    <h3 class="mt-5" >AT WORKPLACES</h3>
                 </div>
         
             </div>

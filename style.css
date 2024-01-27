@@ -98,15 +98,35 @@ background: linear-gradient(
 }
 
 #home h1 {
-    color: rgb(31, 28, 28);
-  font-weight: bold;
+    color: rgb(254, 244, 244);
     position: absolute;
-    top:9rem;
-    left: 32%; 
- 
-    font-size:300%;
-    transform: translateX(-50%);
+    top: 12rem;
+    left: 45%;
+    font-size: 380%; /* Decreased font size */
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevents line breaks */
 }
+
+#home h2 {
+    color: rgb(248, 247, 247);
+    position: absolute;
+    top: 16rem;
+    left: 45%;
+    font-size: 320%; /* Decreased font size */
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+#home h3 {
+    color: rgb(244, 244, 244);
+    position: absolute;
+    top: 20rem;
+    left: 45%;
+    font-size: 290%; /* Decreased font size */
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevents line breaks */
+}
+
 #home p{
 position: absolute;
 color: rgb(31, 28, 28);
@@ -608,7 +628,38 @@ color: black;
 
 
 @media (max-width: 768px) {
+    .col-md-3 {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #home h1 {
+        position: absolute;
+        top: 39rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 230%;
+    }
     
+    #home h2 {
+        position: absolute;
+        top: 42rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 200%;
+    }
+    
+    #home h3 {
+        position: absolute;
+        top: 45rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 180%;
+    }
+
     #service{
         background: linear-gradient(
             to right,
@@ -710,7 +761,7 @@ color: black;
         left:3rem;
     }
     #ready img {
-        width: 70%; /* Make the image fill the container */
+        width:60%; /* Make the image fill the container */
         height: auto; /* Maintain aspect ratio */
         position: relative;
         bottom:3rem;
@@ -769,7 +820,7 @@ color: black;
         bottom:77px;
     }
     #done img {
-        width: 140%; /* Make the image fill the container */
+        width: 100%; /* Make the image fill the container */
         height: auto; /* Maintain aspect ratio */
         position: relative;
         top:7%;
@@ -777,16 +828,7 @@ color: black;
     }
      
     
-    #home h1 {
-        font-size: 23px; /* Decrease font size for smaller screens */
-        top: 50%; /* Adjusted for better positioning on smaller screens */
-        text-align: left; /* Align text to the left on smaller screens */
-         /* Add some padding for better readability on smaller screens */
-        position: relative;
-        top: 40rem;
-    left:53%; /* Adjusted for better centering */
-
-    }
+   
     #home p{
 position: absolute;
     top:50rem;
@@ -830,17 +872,17 @@ position: absolute;
     padding:2px;
 }
 .home-box4 {
-    left: 10%;
+    left:1%;
     top: 4rem;
 }
 
 .home-box5 {
-    left: 10%;
+    left: 1%;
     top: 1.5rem;
 }
 
 .home-box6 {
-    left: 10%;
+    left: 1%;
     bottom:1rem;
 }
 #done {
@@ -855,6 +897,11 @@ position: absolute;
     z-index: 1; /* Set a higher z-index for the background */
   
     height:auto;
+}
+#done h2{
+    position: relative;
+    left:0%;
+    font-size: 18px;
 }
 #course p {
     right: -13px; /* Reset the right property for smaller screens */
@@ -944,7 +991,7 @@ position: absolute;
 }
 #button{
     position: relative;
-    left:0%;
+    left:-10%;
     bottom:1rem; 
 }
 
