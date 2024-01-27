@@ -56,7 +56,18 @@ if (isset($_POST['btnAdd'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css?v=2.3.4" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-   
+    <style>
+/* Hide the spinner */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+</style>
 </head>
 <body>
     <section id="home" class="bg-primary text-white">
@@ -235,7 +246,7 @@ if (isset($_POST['btnAdd'])) {
                 </div>
     <div class="col-lg-6 col-md-6 col-12">
         <h1 style="color:black; font-size: 2.5em;" data-aos="fade-up">APPLY NOW</h1>
-        <form method="post" href="index.php" enctype="multipart/form-data" data-aos="fade-up">
+        <form method="post"  href="index.php" enctype="multipart/form-data" data-aos="fade-up">
     <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
     <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
     <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
@@ -274,16 +285,80 @@ if (isset($_POST['btnAdd'])) {
 </section>
 
 <section id="footer" class="bg-primary text-white">
-        <div class="container-5">
-        <h5>thank you </h5>
-        <img src="img/img8.png" data-aos="fade-up" class="img-fluid" alt="">
-                        </div>
-    </section>
+  <div class="container-5">
+  <h5>More Information</h5>
+    <div class="accordion">
+      <div class="panel panel">
+      <div class="panel-header" onclick="togglePanel(this)">Who Can Apply? </div>
+        <div class="panel-content hidden">
+        Anyone between 18 to 50 Yrs of Age Can Apply
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">What Is The Minimum Qualification Required? </div>
+        <div class="panel-content hidden">
+        You should at completed minimum of 8th Std and above.
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Is The Course Online? </div>
+        <div class="panel-content hidden">
+        Yes, The course is completely online and you can complete it anytime.
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Is The Course Available In All Languages? </div>
+        <div class="panel-content hidden">
+        Yes, The Course Is Available In All Languages That You Wish To Choose
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Will I Get Job After Completing The Course? </div>
+        <div class="panel-content hidden">
+        Yes. 100% You will get the job by NextGen Company On Order Fulfilment Job Role.
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Is The Available For Work From Home? </div>
+        <div class="panel-content hidden">
+        Yes, Job is Completely online, And you can work anywhere and anytime.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init();
 </script>
+<script>
+function togglePanel(panelHeader) {
+  var panel = panelHeader.parentNode;
+  var panelContent = panel.querySelector('.panel-content');
+  var allPanels = document.querySelectorAll('.panel');
 
+  // Close all panels and reset symbols
+  allPanels.forEach(function(item) {
+    var content = item.querySelector('.panel-content');
+    if (content !== panelContent && !content.classList.contains('hidden')) {
+      content.classList.add('hidden');
+      item.querySelector('.panel-header').textContent = item.querySelector('.panel-header').textContent.replace('−', '+');
+    }
+  });
+
+  // Toggle the clicked panel and update symbol
+  if (panelContent.classList.contains('hidden')) {
+    panelContent.classList.remove('hidden');
+    panelHeader.textContent = panelHeader.textContent.replace('+', '−');
+  } else {
+    panelContent.classList.add('hidden');
+    panelHeader.textContent = panelHeader.textContent.replace('−', '+');
+  }
+}
+
+
+</script>
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
    
