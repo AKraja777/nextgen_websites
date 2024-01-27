@@ -249,7 +249,7 @@ input[type="number"] {
       <div class="panel panel">
         <div class="panel-header" onclick="togglePanel(this)">What Is The Minimum Qualification Required? </div>
         <div class="panel-content hidden">
-        You have completed minimum of 8th Std and above.
+        You should have completed minimum of 8th Std and above.
         </div>
       </div>
       <div class="panel panel">
