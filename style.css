@@ -343,9 +343,9 @@ color: black;
     height: 100vh;
     background: linear-gradient(
         to right,
-        #c9ef42,
-        #f1f77e,
-        #f0ecb6
+        #0abff7,
+        #41ceea,
+        #9aedef
      
     );
     
@@ -357,7 +357,7 @@ color: black;
     font-weight: bold;
 }
 #course p {
-    color: #a76ca0;
+    color: #e70cce;
     position: relative;
     right: 35%;
     top: 0rem;
@@ -605,6 +605,64 @@ color: black;
 
 
 @media (max-width: 768px) {
+    #service{
+        background: linear-gradient(
+            to right,
+            #0861f0,
+            #519bd8,
+            #85cbf7
+        );
+        height:60rem;
+    }
+    
+    .home-box1 {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(
+    to right,
+    #c7f8db,
+    #b1dcea,
+    #96bdfd
+    );
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top:-4rem;
+    }
+    
+    
+    .home-box2 {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(
+    to right,
+    #abce2a,
+    #7acda2,
+    #ebdb64
+    );
+    position: relative;
+    top:-10rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    margin-bottom: 50px; /* Add margin to create space */
+    }
+    .home-box3 {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(
+    to right,
+    #9657ee,
+    #c270a9,
+    #ef8864
+    );
+    position: relative;
+    top:-17rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    margin-bottom: 50px; /* Add margin to create space */
+    }
 
     #footer img{
         width:150px;
@@ -623,7 +681,7 @@ color: black;
      }
     #ready h1 {
   
-        font-size: 40px;
+        font-size: 30px;
         color:#050606;
         font-weight: bold;
         position: relative;
@@ -707,14 +765,14 @@ color: black;
      
     
     #home h1 {
-        font-size: 20px; /* Decrease font size for smaller screens */
+        font-size: 23px; /* Decrease font size for smaller screens */
         top: 50%; /* Adjusted for better positioning on smaller screens */
         text-align: left; /* Align text to the left on smaller screens */
-        padding: 0 15px; /* Add some padding for better readability on smaller screens */
-        text-align: center; /* Center the text by default */
-        top: 38rem;
-    left: 40%; /* Adjusted for better centering */
-    margin:50px;
+         /* Add some padding for better readability on smaller screens */
+        position: relative;
+        top: 40rem;
+    left:53%; /* Adjusted for better centering */
+
     }
     #home p{
 position: absolute;
@@ -775,7 +833,7 @@ position: absolute;
 #done {
     background: linear-gradient(
         to right,
-        #ddf3f5,
+        #ddf5e1,
         #41e2f6,
         #0084f3,
         #bdabf1

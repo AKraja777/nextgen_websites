@@ -1,7 +1,5 @@
 <?php
 
-header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 
 $servername = "localhost"; // replace with your database host
 $username = "u743445510_nextgen"; // replace with your database username
@@ -53,7 +51,7 @@ if (isset($_POST['btnAdd'])) {
     <meta charset="UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css?v=<?php echo time(); ?>" />
     <title>NextGen</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css?v=2.3.4" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
@@ -71,9 +69,7 @@ if (isset($_POST['btnAdd'])) {
                 <div class="col-md-6" data-aos="fade-up">
                     <h1 class="mt-5" >ALL JOBS DON'T NEED EMPLOYEES AT WORKPLACES</h1>
                 </div>
-                <div class="col-md-6 ">
-                    <p>LEARN MORE</p>
-                </div>
+        
             </div>
         </div>
     </section>
@@ -228,11 +224,29 @@ if (isset($_POST['btnAdd'])) {
             </div>
         </div>
     </section>
+    <section id="contact" class="bg-primary text-white">
+    <div class="container box">
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <img src="img/img2.png" data-aos="fade-up"  class="img-fluid">
+                </div>
+    <div class="col-lg-6 col-md-6 col-12">
+        <h1 style="color:black; font-size: 2.5em;">APPLY NOW</h1>
+        <form method="post" href="index.php" enctype="multipart/form-data">
+    <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
+    <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
+    <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
+    <input type="text"  class="form-control" id="location" name="location" placeholder="enter your Location" name="location" required>
+    <button type="submit" class="btn signin" name="btnAdd">Enroller Now</button>
+</form>
+        </div>
+   </div>
+    </section>
     <section id="ready" class="bg-primary text-white">
         <div class="container-5">
             <div class="row d-flex flex-column">
                 <div class="col-md-6">
-                    <h1 class="my-5" data-aos="fade-up">Ready to work with us ??</h1>
+                    <h1 class="my-5" data-aos="fade-up">Ready to work with us??</h1>
                     <p1 data-aos="fade-up">Talk to us</p1>
                     <img src="img/img4.png" data-aos="fade-up"  class="img-fluid">
                     <h6 data-aos="fade-up">contact us</h6>
@@ -255,24 +269,6 @@ if (isset($_POST['btnAdd'])) {
         </div>
     </div>
 </section>
-<section id="contact" class="bg-primary text-white">
-    <div class="container box">
-        <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <img src="img/img2.png" data-aos="fade-up"  class="img-fluid">
-                </div>
-    <div class="col-lg-6 col-md-6 col-12">
-        <h1 style="color:black; font-size: 2.5em;">APPLY NOW</h1>
-        <form method="post" href="index.php" enctype="multipart/form-data">
-    <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
-    <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
-    <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
-    <input type="text"  class="form-control" id="location" name="location" placeholder="enter your Location" name="location" required>
-    <button type="submit" class="btn signin" name="btnAdd">Enroller Now</button>
-</form>
-        </div>
-   </div>
-    </section>
     <section id="footer">
         <h5>thank you </h5>
         <img src="img/img8.png" data-aos="fade-up" class="img-fluid" alt="">
