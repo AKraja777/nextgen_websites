@@ -686,11 +686,11 @@ color: black;
             #69c782,
             #a0e3b8
         ); /* Set text color to white or any color that contrasts with the background */
-       
+        height:63rem;
     }
     #ready h1 {
   
-        font-size: 30px;
+        font-size: 25px;
         color:#050606;
         font-weight: bold;
         position: relative;
