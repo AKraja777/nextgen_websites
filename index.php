@@ -80,7 +80,7 @@ input[type="number"] {
                 <div class="col-md-6" data-aos="fade-up">
                     <h1 class="mt-5" >ALL JOBS DON'T</h1>
                     <h2 class="mt-5" >NEED EMPLOYEES</h2>
-                    <h3 class="mt-5" >AT WORK PLACES</h3>
+                    <h3 class="mt-5" >AT WORKPLACES</h3>
                 </div>
         
             </div>
@@ -210,7 +210,7 @@ input[type="number"] {
                     <div class="col-md-6 mt-3" data-aos="fade-up">
                         <iframe id= "video" width="100%" height="315" src="https://www.youtube.com/embed/V90381PsLH0" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    
+                 </div>    
             </div>
         </div>
     </section>
@@ -229,20 +229,19 @@ input[type="number"] {
                         </button>
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
                         <img src="img/img7.png" data-aos="fade-up"  class="img-fluid">
-                    </div>
+                      </div>
                     <div class="embed-responsive embed-responsive-16by9" data-aos="fade-up">
                         <iframe class="embed-responsive-item" width="120%" height="315" src="https://www.youtube.com/embed/N0ao4OA_OQI" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section id="footer" class="bg-primary text-white">
+<section id="information" class="bg-primary text-white">
   <div class="container-5">
   <h5>More Information</h5>
     <div class="accordion">
       <div class="panel panel">
-      <div class="panel-header" onclick="togglePanel(this)">Who Can Apply? </div>
+        <div class="panel-header" onclick="togglePanel(this)">Who Can Apply? </div>
         <div class="panel-content hidden">
         Anyone between 18 to 50 Yrs of Age Can Apply
         </div>
@@ -250,7 +249,7 @@ input[type="number"] {
       <div class="panel panel">
         <div class="panel-header" onclick="togglePanel(this)">What Is The Minimum Qualification Required? </div>
         <div class="panel-content hidden">
-        You should at completed minimum of 8th Std and above.
+        You have completed minimum of 8th Std and above.
         </div>
       </div>
       <div class="panel panel">
@@ -272,15 +271,14 @@ input[type="number"] {
         </div>
       </div>
       <div class="panel panel">
-        <div class="panel-header" onclick="togglePanel(this)">Is The Available For Work From Home? </div>
+        <div class="panel-header" onclick="togglePanel(this)">Is The  Job Available For Work From Home? </div>
         <div class="panel-content hidden">
-        Yes, Job is Completely online, And you can work anywhere and anytime.
+        Yes, Job is Completely online, And you can work from anywhere and anytime.
         </div>
       </div>
     </div>
   </div>
 </section>
-
     <section id="contact" class="bg-primary text-white">
     <div class="container box">
         <div class="row">
@@ -299,7 +297,9 @@ input[type="number"] {
 </form>
         </div>
    </div>
+   </div>
     </section>
+    
     <section id="ready" class="bg-primary text-white">
         <div class="container-5">
             <div class="row d-flex flex-column">
@@ -320,12 +320,10 @@ input[type="number"] {
                 <div class="home-box14" data-aos="fade-up">
                     <h2 class="text-start" >Address</h2>
                     <p class="text-start">#9,2nd Floor,A3,NBA Tower, Thillainagar, 11th Cross W, Tennur, Tiruchirappalli, Tamil Nadu 620018
-
                     </p>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
