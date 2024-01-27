@@ -80,7 +80,7 @@ input[type="number"] {
                 <div class="col-md-6" data-aos="fade-up">
                     <h1 class="mt-5" >ALL JOBS DON'T</h1>
                     <h2 class="mt-5" >NEED EMPLOYEES</h2>
-                    <h3 class="mt-5" >AT WORKPLACES</h3>
+                    <h3 class="mt-5" >AT WORK PLACES</h3>
                 </div>
         
             </div>
@@ -237,6 +237,50 @@ input[type="number"] {
             </div>
         </div>
     </section>
+    <section id="footer" class="bg-primary text-white">
+  <div class="container-5">
+  <h5>More Information</h5>
+    <div class="accordion">
+      <div class="panel panel">
+      <div class="panel-header" onclick="togglePanel(this)">Who Can Apply? </div>
+        <div class="panel-content hidden">
+        Anyone between 18 to 50 Yrs of Age Can Apply
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">What Is The Minimum Qualification Required? </div>
+        <div class="panel-content hidden">
+        You should at completed minimum of 8th Std and above.
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Is The Course Online? </div>
+        <div class="panel-content hidden">
+        Yes, The course is completely online and you can complete it anytime.
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Is The Course Available In All Languages? </div>
+        <div class="panel-content hidden">
+        Yes, The Course Is Available In All Languages That You Wish To Choose
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Will I Get Job After Completing The Course? </div>
+        <div class="panel-content hidden">
+        Yes. 100% You will get the job by NextGen Company On Order Fulfilment Job Role.
+        </div>
+      </div>
+      <div class="panel panel">
+        <div class="panel-header" onclick="togglePanel(this)">Is The Available For Work From Home? </div>
+        <div class="panel-content hidden">
+        Yes, Job is Completely online, And you can work anywhere and anytime.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <section id="contact" class="bg-primary text-white">
     <div class="container box">
         <div class="row">
@@ -282,50 +326,6 @@ input[type="number"] {
             </div>
         </div>
     </div>
-</section>
-
-<section id="footer" class="bg-primary text-white">
-  <div class="container-5">
-  <h5>More Information</h5>
-    <div class="accordion">
-      <div class="panel panel">
-      <div class="panel-header" onclick="togglePanel(this)">Who Can Apply? </div>
-        <div class="panel-content hidden">
-        Anyone between 18 to 50 Yrs of Age Can Apply
-        </div>
-      </div>
-      <div class="panel panel">
-        <div class="panel-header" onclick="togglePanel(this)">What Is The Minimum Qualification Required? </div>
-        <div class="panel-content hidden">
-        You should at completed minimum of 8th Std and above.
-        </div>
-      </div>
-      <div class="panel panel">
-        <div class="panel-header" onclick="togglePanel(this)">Is The Course Online? </div>
-        <div class="panel-content hidden">
-        Yes, The course is completely online and you can complete it anytime.
-        </div>
-      </div>
-      <div class="panel panel">
-        <div class="panel-header" onclick="togglePanel(this)">Is The Course Available In All Languages? </div>
-        <div class="panel-content hidden">
-        Yes, The Course Is Available In All Languages That You Wish To Choose
-        </div>
-      </div>
-      <div class="panel panel">
-        <div class="panel-header" onclick="togglePanel(this)">Will I Get Job After Completing The Course? </div>
-        <div class="panel-content hidden">
-        Yes. 100% You will get the job by NextGen Company On Order Fulfilment Job Role.
-        </div>
-      </div>
-      <div class="panel panel">
-        <div class="panel-header" onclick="togglePanel(this)">Is The Available For Work From Home? </div>
-        <div class="panel-content hidden">
-        Yes, Job is Completely online, And you can work anywhere and anytime.
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
