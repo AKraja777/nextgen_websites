@@ -48,10 +48,10 @@ body {
     flex-direction: column;
  }
  #contact input{
-    margin: 6px 0px;
+    margin:2px 0px;
  }
  #contact textarea {
-    margin: 6px 0px;
+    margin:2px 0px;
  }
  .signin{
     background: aqua !important;
