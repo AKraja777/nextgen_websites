@@ -57,7 +57,6 @@ body {
         #dfed80,
         #e1ed86
     ); /* Set text color to white or any color that contrasts with the background */
-    height:37rem; /* Set the height to 100% of the viewport height */
 }
 #contact {
     background: linear-gradient(
