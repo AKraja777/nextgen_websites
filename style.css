@@ -492,7 +492,7 @@ color: black;
         #69c782,
         #a0e3b8
     ); /* Set text color to white or any color that contrasts with the background */
-    height:65rem;
+    height:50rem;
 }
 
 #ready h1 {
@@ -679,6 +679,15 @@ color: black;
            font-size:50px;
            font-weight: bold;
      }
+     #ready{
+        background: linear-gradient(
+            to right,
+            #31f437,
+            #69c782,
+            #a0e3b8
+        ); /* Set text color to white or any color that contrasts with the background */
+        height:64rem;
+    }
     #ready h1 {
   
         font-size: 30px;
