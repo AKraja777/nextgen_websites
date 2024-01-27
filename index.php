@@ -224,29 +224,11 @@ if (isset($_POST['btnAdd'])) {
             </div>
         </div>
     </section>
-    <section id="contact" class="bg-primary text-white">
-    <div class="container box">
-        <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <img src="img/img2.png" data-aos="fade-up"  class="img-fluid">
-                </div>
-    <div class="col-lg-6 col-md-6 col-12">
-        <h1 style="color:black; font-size: 2.5em;">APPLY NOW</h1>
-        <form method="post" href="index.php" enctype="multipart/form-data">
-    <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
-    <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
-    <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
-    <input type="text"  class="form-control" id="location" name="location" placeholder="enter your Location" name="location" required>
-    <button type="submit" class="btn signin" name="btnAdd">Enroller Now</button>
-</form>
-        </div>
-   </div>
-    </section>
     <section id="ready" class="bg-primary text-white">
         <div class="container-5">
             <div class="row d-flex flex-column">
                 <div class="col-md-6">
-                    <h1 class="my-5" data-aos="fade-up">Ready to work with us??</h1>
+                    <h1 class="my-5"  data-aos="fade-up">Contact us</h1>
                     <p1 data-aos="fade-up">Talk to us</p1>
                     <img src="img/img4.png" data-aos="fade-up"  class="img-fluid">
                     <h6 data-aos="fade-up">contact us</h6>
@@ -269,6 +251,26 @@ if (isset($_POST['btnAdd'])) {
         </div>
     </div>
 </section>
+    <section id="contact" class="bg-primary text-white">
+    <div class="container box">
+        <div class="row">
+        <h1 class="my-5" style="color:black; font-weight:bold;" data-aos="fade-up">Ready to work with us??</h1>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <img src="img/img2.png" data-aos="fade-up"  class="img-fluid">
+                </div>
+    <div class="col-lg-6 col-md-6 col-12">
+        <h1 style="color:black; font-size: 2.5em;" data-aos="fade-up">APPLY NOW</h1>
+        <form method="post" href="index.php" enctype="multipart/form-data" data-aos="fade-up">
+    <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
+    <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
+    <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
+    <input type="text"  class="form-control" id="location" name="location" placeholder="enter your Location" name="location" required>
+    <button type="submit" class="btn signin" name="btnAdd">Enroller Now</button>
+</form>
+        </div>
+   </div>
+    </section>
+
 <section id="footer" class="bg-primary text-white">
         <div class="container-5">
         <h5>thank you </h5>

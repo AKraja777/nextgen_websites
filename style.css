@@ -32,8 +32,9 @@ body {
         #bbebe7,
         #a3e6ec
     ); /* Set text color to white or any color that contrasts with the background */
-    height:20rem; /* Set the height to 100% of the viewport height */
+    height:34rem; /* Set the height to 100% of the viewport height */
 }
+
 #contact img{
     height:80%;
  }
@@ -47,10 +48,10 @@ body {
     flex-direction: column;
  }
  #contact input{
-    margin: 10px 0px;
+    margin: 6px 0px;
  }
  #contact textarea {
-    margin: 10px 0px;
+    margin: 6px 0px;
  }
  .signin{
     background: aqua !important;
@@ -64,6 +65,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
 #home #icon {
     width: 100%;
     max-width: 80px;
@@ -605,6 +608,7 @@ color: black;
 
 
 @media (max-width: 768px) {
+    
     #service{
         background: linear-gradient(
             to right,
