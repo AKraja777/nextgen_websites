@@ -1,10 +1,9 @@
 <?php
 
-
 $servername = "localhost"; // replace with your database host
-$username = "u743445510_nextgen"; // replace with your database username
-$password = "Nextgen@2023"; // replace with your database password
-$database = "u743445510_nextgen"; // replace with your database name
+$username = "u117947056_nextgen"; // replace with your database username
+$password = "Nextgen@0111"; // replace with your database password
+$database = "u117947056_nextgen"; // replace with your database name
 
 
 
@@ -17,6 +16,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+$refer_code = isset($_GET['refer_code']) ? $_GET['refer_code'] : '';
 
 if (isset($_POST['btnAdd'])) {
     // Retrieve form data
@@ -26,7 +26,7 @@ if (isset($_POST['btnAdd'])) {
     $location = isset($_POST['location']) ? $_POST['location'] : '';
 
     // Insert data into the database
-    $sql_query = "INSERT INTO website_enroll (name, mobile, email, location) VALUES ('$name', '$mobile', '$email', '$location')";
+    $sql_query = "INSERT INTO website_enroll (name, mobile, email, location,refer_code) VALUES ('$name', '$mobile', '$email', '$location','$refer_code')";
     
     if ($conn->query($sql_query) === TRUE) {
         // Display JavaScript alert
@@ -288,7 +288,7 @@ input[type="number"] {
                 </div>
     <div class="col-lg-6 col-md-6 col-12">
         <h1 style="color:black; font-size: 2.5em;" data-aos="fade-up">APPLY NOW</h1>
-        <form method="post"  href="index.php" enctype="multipart/form-data" data-aos="fade-up">
+        <form method="post" action="index.php?refer_code=<?php echo urlencode($refer_code); ?>" enctype="multipart/form-data" data-aos="fade-up">
     <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
     <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
     <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
