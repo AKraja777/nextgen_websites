@@ -46,6 +46,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($sql_query) === TRUE) {
         // Display JavaScript alert
         echo "<script>alert('New record created successfully');</script>";
+
+        header("Location: index.php"); // Replace 'success.php' with your actual success page
+        exit();
+
+
     } else {
         echo "Error: " . $sql_query . "<br>" . $conn->error;
     }
