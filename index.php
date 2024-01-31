@@ -1,5 +1,4 @@
 <?php
-
 $servername = "localhost"; // replace with your database host
 $username = "u743445510_nextgen"; // replace with your database username
 $password = "Nextgen@2023"; // replace with your database password
@@ -34,7 +33,7 @@ if (!empty($refer_code)) {
     }
 }
 
-if (isset($_POST['btnAdd'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $name = isset($_POST['name']) ? $_POST['name'] : '';
     $mobile = isset($_POST['mobile']) ? $_POST['mobile'] : '';
@@ -47,13 +46,16 @@ if (isset($_POST['btnAdd'])) {
     if ($conn->query($sql_query) === TRUE) {
         // Display JavaScript alert
         echo "<script>alert('New record created successfully');</script>";
-       
-        exit();
     } else {
         echo "Error: " . $sql_query . "<br>" . $conn->error;
     }
 }
+
+$conn->close();
 ?>
+
+<!-- Rest of your HTML code -->
+
 
 <!-- Rest of your HTML code -->
 
