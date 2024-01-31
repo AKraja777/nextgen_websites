@@ -5,10 +5,6 @@ $username = "u743445510_nextgen"; // replace with your database username
 $password = "Nextgen@2023"; // replace with your database password
 $database = "u743445510_nextgen"; // replace with your database name
 
-
-
-
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -16,7 +12,27 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 $refer_code = isset($_GET['refer_code']) ? $_GET['refer_code'] : '';
+
+// Initialize user_id variable
+$user_id = null;
+
+// Check if refer_code is provided
+if (!empty($refer_code)) {
+    // Query to fetch user_id based on refer_code
+    $query = "SELECT id FROM users WHERE refer_code = '$refer_code'";
+
+    // Execute the query
+    $result = $conn->query($query);
+
+    // Check if query executed successfully and a row is found
+    if ($result && $result->num_rows > 0) {
+        // Fetch user_id from the result
+        $row = $result->fetch_assoc();
+        $user_id = $row['id'];
+    }
+}
 
 if (isset($_POST['btnAdd'])) {
     // Retrieve form data
@@ -26,13 +42,12 @@ if (isset($_POST['btnAdd'])) {
     $location = isset($_POST['location']) ? $_POST['location'] : '';
 
     // Insert data into the database
-    $sql_query = "INSERT INTO website_enroll (name, mobile, email, location,refer_code) VALUES ('$name', '$mobile', '$email', '$location','$refer_code')";
+    $sql_query = "INSERT INTO website_enroll (name, mobile, email, location, user_id) VALUES ('$name', '$mobile', '$email', '$location', '$user_id')";
     
     if ($conn->query($sql_query) === TRUE) {
         // Display JavaScript alert
         echo "<script>alert('New record created successfully');</script>";
-        // Redirect to another page after displaying the alert
-        echo "<script>window.location.href='index.php';</script>";
+       
         exit();
     } else {
         echo "Error: " . $sql_query . "<br>" . $conn->error;
@@ -288,12 +303,13 @@ input[type="number"] {
                 </div>
     <div class="col-lg-6 col-md-6 col-12">
         <h1 style="color:black; font-size: 2.5em;" data-aos="fade-up">APPLY NOW</h1>
-        <form method="post" action="index.php?refer_code=<?php echo urlencode($refer_code); ?>" enctype="multipart/form-data" data-aos="fade-up">
+        <form method="post" action="#" enctype="multipart/form-data" data-aos="fade-up">
     <input type="text"  class="form-control" id="name" name="name" placeholder="enter your name" required>
     <input type="mail"  class="form-control" id="email" name="email" placeholder="enter your mail" name="email" required>
     <input type="number"  class="form-control" id="mobile" name="mobile" placeholder="enter your Contact Number" name="mobile" required>
     <input type="text"  class="form-control" id="location" name="location" placeholder="enter your Location" name="location" required>
-    <button type="submit" class="btn signin" name="btnAdd">Enroller Now</button>
+    <button type="submit" class="btn signin" name="btnAdd" onclick="addReferCode()">Enroll Now</button>
+
 </form>
         </div>
    </div>
@@ -357,6 +373,22 @@ function togglePanel(panelHeader) {
 
 
 </script>
+<script>
+function addReferCode() {
+    var referCode = "<?php echo $refer_code; ?>";
+    var form = document.querySelector("form");
+    if (referCode && form) {
+        // Append refer_code to the URL when the form is submitted
+        form.addEventListener('submit', function(event) {
+            var action = form.getAttribute("action");
+            form.setAttribute("action", action + "?refer_code=" + referCode);
+        });
+    }
+}
+</script>
+
+
+
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
    
